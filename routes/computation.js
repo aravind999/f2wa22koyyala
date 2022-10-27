@@ -14,11 +14,11 @@ router.get('/', function(req, res, next) {
           if (search_params.get("x")) {
             x= search_params.get("x");}
    
-    var pow = Math.pow(x);
-    var sign = Math.sign(x) 
-    var tanh = Math.tanh(x) 
-    var trunc = Math.trunc(x)
-  res.render('computation', { title: 'Express',x:x,pow:pow,sign:sign,tanh:tanh,trunc:trunc });
+    var a = Math.pow(x);
+    var b = Math.sign(x) 
+    var c = Math.tanh(x) 
+    var d = Math.trunc(x)
+  res.render('computation', { title: 'Express',x:x,a:a,b:b,c:c,d:d });
   
 });
 
